@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class playerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    public int speed = 2;
+    public int speed = 10;
     private Rigidbody2D characterBody;
     private Vector2 velocity;
     private Vector2 inputMovement;
 
     void Start()
     {
-        velocity = new Vector2 (speed, speed);
+        velocity = new Vector2(speed, speed);
         characterBody = GetComponent<Rigidbody2D>();
     }
 
@@ -23,7 +23,7 @@ public class playerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 delta = inputMovement * velocity * Time.deltaTime;
+        Vector2 delta = inputMovement * velocity * Time.fixedDeltaTime;
         Vector2 newPosition = characterBody.position + delta;
         characterBody.MovePosition(newPosition);
     }
