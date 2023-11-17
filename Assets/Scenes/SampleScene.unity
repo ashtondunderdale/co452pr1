@@ -525,6 +525,7 @@ GameObject:
   - component: {fileID: 864262325}
   - component: {fileID: 864262327}
   - component: {fileID: 864262328}
+  - component: {fileID: 864262331}
   - component: {fileID: 864262329}
   - component: {fileID: 864262330}
   m_Layer: 0
@@ -640,7 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ce38ad3b9e0804498b923ebcf7b914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 0.1
 --- !u!70 &864262329
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -697,6 +698,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &864262331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864262324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1447b6d624b06a44af0f29a3167d1c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  Strength: 1
+  Intelligence: 1
+  Fortitude: 1
+  Versatility: 1
+  Dexterity: 1
 --- !u!1 &897859732
 GameObject:
   m_ObjectHideFlags: 0
